@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.cabecera{
+    width: 100%;
+    background-color: aquamarine;
+   
+
+}
+.cabecera__wrapper{
+    background-color:aqua;
+    min-height: 100px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+}
+.cabecera__logo{
+    text-align: start;
+    
+}
+.cabecera__menu{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}

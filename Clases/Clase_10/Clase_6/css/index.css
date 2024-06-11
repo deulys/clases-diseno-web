@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+div.cabecera{
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    padding: 20px 50px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+div.cabecera div.logo{
+    /* background-color: aqua; */
+}
+div.cabecera div.menu{
+    /* background-color: blue; */
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+dix.cabecera div.menu div.item{
+    /* background-color: brown; */
+}
+div.inside{
+    width: 100%;
+    min-height: 600px;
+    /* background-color: lightgray; */
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+div.inside div.logo{
+    width: 60%;
+    min-height: 300px;
+    background-color: bisque;
+}
+div.columnas{
+    width: 80%;
+    /* background-color: aquamarine; */
+
+    margin: 100px auto;
+    margin:100px auto 100px;
+    margin:100px auto 100px auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+}
+div.columnas div.columna{
+    /* width: 33.3333%;
+    width: calc(100%/3);
+    background-color: yellow; */
+    background-color: yellow; 
+    flex-grow: 1; 
+    /* flex-shrink: 1; */
+    /* flex-basis: 33.333%; */
+   /*  Para que tome el minimo ancho del contenido ojo no puede tener flex-grow */
+   /* flex-basis:min-content; */
+}
+div.columnas div.columna div.titulo{
+    margin-top: 20px;
+}
+
+
+div.footer{
+    width: 100%;
+    /* min-height: 400px; */
+    /* background-color: lightgreen; */
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+div.footer div.rrss{
+    /* background-color: orange; */
+    margin-bottom: 55px;
+
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+div.footer div.rrss div.red{
+    /* background-color: pink; */
+}
+
+div.footer div.policy{
+    /* background-color: orangered; */
+    margin-bottom: 20px;
+    max-width: 500px;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+
+div.footer div.policy div.item{
+    /* background-color: blanchedalmond; */
+
+}
+div.footer div.copy{
+    /* background-color: aqua; */
+    margin-bottom: 45px;
+}
+div.footer div.boton{
+    background-color: green;
+
+    margin-bottom: 40px;
+    padding: 10px 20px;
+    border: 2px solid green;
+}
+
+@media(max-width:1000px){
+    div.cabecera div.menu{
+        display: none;
+    }
+}
+@media(max-width:800px){
+    div.columnas{
+        flex-direction: column;
+    }
+    div.columnas div.columna{
+        width:100%
+    }
+
+}
