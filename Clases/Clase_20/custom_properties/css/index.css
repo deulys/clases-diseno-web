@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+ 
+/* h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+    font-weight: normal;
+} */
+
+/* Custom_properties es muy importante para la definicion de paletas
+y de tamaños en caso que del diseño cambie algo solo se cambia la variable */
+ :root{
+    --c-red:red;
+    --padding-2rem:4rem;
+    --c-aqua:aqua;
+    --rem-1_25:1.25rem;
+    --c-brown:brown;
+ }
+ body{
+    font-family: Helvetica, Arial;
+ }
+
+ .caja{
+    width: 25rem;
+    min-height: 25rem;
+    background-color: var(--c-red);
+ }
+ .caja2{
+    width: 100%;
+    min-height: 20rem;
+    background-color: var(--c-aqua);
+
+    padding: var(--padding-2rem);
+ }
+ .boton{
+    width: 12rem;
+    min-height: 3.125rem;
+    border:3px solid var(--c-red);
+    color: var(--c-red);
+
+    margin-top: var(--rem-1_25);
+    padding: calc( var(--padding-2rem) - 1rem) var(--padding-2rem);
+ }
+
+ .boton:hover{
+    background-color: var(--c-aqua);
+ }
+
+.boton::after{
+    content: "";
+    display: block;
+    width: var(--rem-1_25);
+    height: .25rem;
+    color: var(--c-brown);
+    background-color: var(--c-aqua);
+}
+
+@media(max-width:480px){
+    :root{
+        --c-red:blue;
+        --c-agua:rgb(177, 59,216);
+        --padding-2rem:2rem;
+        --rem_1_25:1.5rem;
+        --min-height-caja:12rem;
+    }
+}
+
+

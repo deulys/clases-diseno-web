@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    }
+    
+    li {
+    list-style: none;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    }
+    
+    a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    }
+    
+    p a {
+    display: inline;
+    }
+    img, picture, video, iframe, svg {
+    display: block;
+    width: 100%;
+    height: initial;
+    }
+    svg {
+    fill: currentColor;
+    }
+    
+    :root {
+    font-size: 100%;
+    --background-header:#fff;
+
+    }
+    html {
+    scroll-behavior: smooth;
+    }
+    body {
+    font-family: Helvetica, Arial;
+    }
+
+    .cabecera{
+        width: 80%;
+        min-height: 100px;
+        background-color: var(--background-header);
+    
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        margin: auto;
+        
+       }
+    .cabecera__logo{
+        
+        max-width: 8.125rem;
+        width: 10%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .cabecera__menu{
+        width: 100%;
+    
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-start;
+        align-items: center;
+       
+        
+    
+        gap: 20px;
+    
+    }
+    .cabecera__item{
+        
+        text-transform: uppercase;
+    
+    }
+    
+    div.container-pixar{
+        width: 100%;
+        min-height: 600px;
+        
+        background-color: bisque;
+    
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    
+    
+    
+    
+    }
+    div.container-pixar div.logo-pixar{
+    
+        width: 70%;
+        min-height: 400px;
+        background-color: aqua;
+    
+    }
+    
+    div.films{
+        width: 80%;
+        background-color: blue;
+        text-align: center;
+    
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: flex-start;
+    
+    
+        margin: 100px auto;
+        gap: 30px;
+        
+    }
+    div.films div.item-film{
+        width: calc(100%/3);
+        
+    
+    }
+    div.films div.item-film div.image-film{
+    
+        min-height: 200px;
+        background-color: antiquewhite;
+    
+    }
+       
+    div.films div.item-film div.footer-film{
+    
+        margin: 20px auto;
+        background-color: red;
+        
+    }
+    
+    div.footer-rss{
+        width: 100%;
+        background-color: blueviolet;
+    
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+        
+    
+    
+    
+    }
+    div.footer-rss div.item-red{
+        width: calc(80%/4);
+        margin: 20px;
+    }
+    

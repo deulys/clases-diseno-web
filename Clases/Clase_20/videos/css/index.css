@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+ 
+/* h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+    font-weight: normal;
+} */
+ :root{
+    font-size: 100%;
+ }
+ body{
+    font-family: Helvetica, Arial;
+ }
+ /* Reset para enlaces */
+ a{
+    color: inherit;
+    text-decoration: none;
+    display: block;
+ }
+ p a{
+    display: inline;
+ }
+ img,video,picture,iframe{
+   display: inline-block;
+   /* width: 100%; */
+   height: initial;
+ }
+Video{
+   /* width: 50%;
+   height: 40vh; */
+   background-color: red;
+}
+.maps{
+   width:50%;
+   height: 900px;
+}
