@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/* .Tipografia{
+    font-size: 50px;
+    color: red;
+    font-family: 'Arial';
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    /* Espacio entre lineas 
+    line-height: 70px;
+    text-shadow: 2px 2px 10px grey;
+} */
+
+body{
+
+}
+/*
+https://www.fontsquirrel.com/
+https://fonts.google.com/ */
+
+/* fontsquirrel.com */
+/* para estandarizar la tipografia y generar un kit de tipografias */
+/* Cuando se genera desde la pagina se generan varios archivos  */
+/* se debe abrir stylesheet.css alli esta como llamar todo el archivo */
+/* para agregar una tipografia nueva */
+
+@font-face{
+    /* font-family es el nombre que se le quiera dar al tipo de letra */
+    font-family: 'Falsa';
+    /* URL de el archivo de debe verificar que el formto sea aceptado por todos lo navegadores */
+    src: url('nombretipografia.ttf');
+}
+.Tipografia{
+    /* Tipografìa seguras */
+    font-family:'Georgia';
+    font-family:'Arial';
+    font-family:'Times New Roman';
+    font-family: 'Verdana';
+    /* En el siguiente caso se agregan varias tipografias por sinno se consigue una se craga otra */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    /* Tipografìa no seguras */
+    font-family: 'Helvetica';
+
+        /* Google Fonts, Adobe fonts...... */
+        /* Personalizadas @font-face */
+}

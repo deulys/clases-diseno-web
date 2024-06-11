@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/* 16px = 1em = 1rem = 100% */
+
+/*          tipo
+    16px    Fija
+    1rem    Relativa
+    1em     Relativa
+    %       Relativa
+*/
+:root{
+
+}
+body{
+    font-size: 16px;
+}
+
+/* Normalmente la tipografia se fija en 16px */
+.Tipografia{
+    font-size: 16px;
+}
