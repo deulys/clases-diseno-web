@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    }
+    
+    li {
+    list-style: none;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    }
+    
+    a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    }
+    
+    p a {
+    display: inline;
+    }
+    img, picture, video, iframe, svg {
+    display: block;
+    width: 100%;
+    height: initial;
+    }
+    svg {
+    fill: currentColor;
+    }
+    
+    :root {
+    font-size: 100%;
+    }
+    html {
+    scroll-behavior: smooth;
+    }
+    body {
+    font-family: Helvetica, Arial;
+    
+    }
+    form,input,label,select,option,textarea, button{
+        font-size: inherit;
+        font-family: inherit;
+        display: block;
+        background-color: transparent;
+
+    }
+   
+    section{
+        background-color: aqua;
+        min-height: 40px;
+        width: 80%;
+    }
+    #seccion1{
+        background-color: orange;
+    }
+    #seccion2{
+        background-color: brown;
+    }
+
+    /* Selectores avanzados */
+    /* Hijos directos */
+    .hijos_directos>li{
+        background-color: red;
+    }
+
+    .hijos_descendientes b{
+        color: green;
+    }
+
+    .hermanos_general ~ li{
+        color: blue;
+    }
+    .hermanos_adyacentes + li{
+        background-color: blueviolet;
+    }
+
+    /* Selectores de atributos */
+    .selectores_atributos a[href]{
+        color: red;
+    }
+
+    .selectores_atributos a[target="_blank"]{
+        color: orange;
+        font-weight: bold;
+    }
+
+
+    /* Comodines */
+   /*  El asterisco * Para los que contengan cierta cadena en cualquier parte 
+   ^ el signo anterior es para los que comiencen por cierta cadena
+   $ Para los que finalicen por cierta cadena 
+   ~ Para los que contengan un atributo cuyo nombre esta en una lista separada por espacio
+   */
+    .selectores_atributos a[href*="elpais"]{
+        color: aqua;
+    }
+    .selectores_atributos a[href^="http://"]{
+        background-color: aquamarine;
+    }
+    .selectores_atributos a[href$=".com"]{
+        background-color: burlywood;
+    }
+
+    .selectores_atributos a[class~="ahora" ]{
+        background-color: darkorchid;
+    }
+
+    /* Selector universal
+    ejemplo
+    *{font-family:arial}
+
+    Solo utilizar una vez
+    
+    */
+
+    /* Pseudos clases */
+
+    .form-pseudoclases *:required{
+        border:2px solid yellow;
+
+    }
+
+    .form-pseudoclases *:focus{
+        border:2px solid black;
+        background-color: aqua;
+        color: aliceblue;
+    }
+
+    .form-pseudoclases *:disabled{
+        border:2px solid orange;
+    }
+    
+        .menu-pseudoclases a:visited{
+            color: aqua;
+        }
+
+    .menu-pseudoclases a:hover{
+        color: yellow;
+    }
+
+    /* Pseudo clases por osicion */
+
+    .lista-pseudoclases li:first-child{
+        color: green;
+    }
+
+    .lista-pseudoclases li:last-child{
+        color: pink;
+    }
+
+    /* Seleccionar elementos de lista que no sea el primero o el ultimo */
+
+    .lista-pseudoclases li:nth-child(4){
+        font-size: 20px;
+    }
+
+    /* Seleccionar de 2 en 2 */
+
+    .lista-pseudoclases li:nth-child(2n){
+        font-size: 20px;
+    }
+
+    /* selecionar impares */
+
+    .lista-pseudoclases li:nth-child(odd){
+        background-color: aqua;
+    }
+    .lista-pseudoclases li:nth-child(even){
+        background-color: sandybrown;
+    }
+
+    /* Pseudoclases por tipo de elementos */
+
+    /* Selecciona el primero del tipo */
+    .articulos-pseudoclases p:first-of-type{
+        background-color: blanchedalmond;
+    }
+
+    .articulos-pseudoclases p:last-of-type{
+        background-color: aquamarine;
+    }
+
+    .articulos-pseudoclases p:nth-of-type(3){
+        background-color: beige;
+    }

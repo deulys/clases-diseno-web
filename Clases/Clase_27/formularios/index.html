@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- <form action="Accion" method="post" enctype="multipart/form-data">
+        <input type="text" placeholder="Escribe el nombre">
+        <input type="checkbox" name="" id="">
+        <input type="radio" name="" id="">
+        <input type="date">
+        <input type="color">
+        <input type="button" value="Envia" name="" id="">
+        <input type="submit" value="Enter">
+        <input type="reset" name="" id="">
+        multiple para varios archivos -->
+       <!--  <input type="file" multiple>
+        <input type="hidden" name="idioma" value="es">
+        <input type="email" placeholder="Escribe tu nombre">
+        <input type="number" name="" id="">
+        <input type="tel" name="" id="">
+        <input type="password">
+        <input type="search" name="" id="">
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <select multiple name="" id="">
+            <option value="">HTML</option>
+            <option value="">CSS</option>
+            <option value="">JavaScript</option>
+            <option value="">HTML</option>
+            <option value="">CSS</option>
+            <option value="">JavaScript</option>
+        </select>
+        <input type="text" readonly>
+        <input type="text" placeholder="Nombre" disabled> -->
+        <!-- Columnas una al lado de la otra
+        fila una arriba o atras de la otra -->
+    <!-- </form> -->
+    <!-- <form action="#" method="get" autocomplete="off"> -->
+        <!-- Para quitar el autocompletar off al autocomplete -->
+        <div class="contenedor_formulario">
+        <form action="#" method="post">
+            <div class="contenedor_textos">
+                <label for="nombre">Nombres</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+                <label for="apellido">Apellidos</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Escribe tu apellido">
+            </div>
+            <div class="contendor_selector">
+                <h2>Elige un idioma:</h2>
+                <select name="idioma">
+                    <option value="">Elige una opciòn</option>
+                    <option value="es">Español</option>
+                    <option value="en">Inglès</option>
+                    <option value="it">Italiano/option>
+                </select>
+            </div>
+            <div class="contenedor_radio">
+                <h2>Elige tu lenguaje de programación</h2>
+                <label for="radio-js">JavaScript</label>
+                <input type="radio" name="lenguaje" value="js" id="radio-js">
+                <label for="radio-html">HTML</label>
+                <input type="radio" name="lenguaje" value="html" id="radio-html">
+                <label for="radio-css">CSS</label>
+            </div>
+            <div class="contenedor_checkbox">
+                <h2>Elige tus intereses</h2>
+                <label for="check-deportes">Deportes</label>
+                <input type="checkbox" checked name="intereses" id="check-deportes" value="deportes">
+                <label for="check-ecologia">Ecologia</label>
+                <input type="checkbox" name="intereses" id="check-ecologia" value="ecologia">
+            </div>
+            <input type="submit" value="Enviar">
+
+            
+        </form>
+        </div>
+</body>
+</html>
