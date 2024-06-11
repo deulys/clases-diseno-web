@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+
+}
+p{
+    font-style: italic; /* Define el estilo italica */
+    font-variant: normal; /* Defini el estilo normal */
+    font-weight: bold; /* Define el grosor de la fuente */
+    font-size: 20px; /* Define el tamaño de la fuente */
+    line-height: 30px;/* Define la altura de la linea */
+    font-family: Helvetica; /* Define la fuente del texto */
+}
+.Tipografia{
+    /* width: 80%;
+    background-color: red; */
+    font-family: "roboto",sans-serif;
+    /* Este tamaño va a surtir efecto si el tipo de letra tiene disponible el peso */
+    font-weight: 300;
+    font-style: italic;
+    font-size: 100%;
+    font-variant: small-caps;
+    font-stretch: ultra-condensed;
+
+    text-align: justify;
+    text-transform: uppercase;
+    text-decoration: none;
+        /* text-decoration-color: blueviolet; */
+        /* grosor de la linea decocaration */
+        /* text-decoration-thickness: 2px; */
+    
+        text-shadow:1px 1px 3px blue ;
+    /* Si est wrap es en varias lineas y nowrap en una linea */
+    /* text-wrap: nowrap; */
+    /* text-indent: 40px; */
+    /* espacio entre letras */
+    letter-spacing: 4px;
+
+    /* Espacio entre palabras */
+    word-spacing: 5px;
+    /* Separacion entre lineas */
+    line-height: 40px;
+
+    /* Separar palabras con guion */
+    hyphens: auto;
+
+}
+/* .Tipografia::before{
+    content: "";
+    display: inline-block;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+
+} */
+.coming-soon-regular{
+
+}
