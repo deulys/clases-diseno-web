@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.cabecera{
+    width: 100%;
+    min-height: 100px;
+    background-color: lightblue;
+
+    padding: 10px 20px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.cabecera .logo{background-color: pink;}
+.cabecera .menu{
+    background-color: yellow;
+/*  */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap:10px;
+}
+.cabecera .item{
+    background-color: rebeccapurple;
+}
+.producto{
+    width: 100%;
+    min-height: 600px;
+    background-color: gray;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.producto .wrapper{
+    width: 90%;
+    max-width: 900px;
+    background-color: orange;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.producto .imagen{
+    width: 50%;
+    min-height: 200px;
+    background-color: red;
+}
+.producto .informacion{
+    width: 50%;
+    background-color:aquamarine ;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+}
+.producto .titulo{
+    /* margin: 0 0 20px; */
+}
+.producto .parrafo{
+    /* margin: 0 0 20px; */
+}
+.producto .boton{
+    background-color: brown;
+    display: inline-block;
+    padding: 10px 20px;
+}
+
+.amarillo{
+    background-color: yellow;
+}
+.amarillo .wrapper{
+    background-color: bisque;
+    flex-direction: row-reverse;
+}
+
+/* METODOLOGIA BEM */
+.cabecera{}
+.cabecera__logo{}
+.cabecera__menu{}
+.cabecera__item{}
