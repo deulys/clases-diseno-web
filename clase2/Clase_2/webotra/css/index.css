@@ -1,0 +1,31 @@
+body{
+    background-color: purple;
+}
+div{
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+}
+div#perro{
+    width: 200px;
+    height: 200px;
+    background-color: greenyellow;
+}
+div#gato{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+}
+
+div.platano{
+    width: 200px;
+    height: 200px;
+    background-color: beige;;
+}
+
+/*
+Normas:
+    Cascada
+    1. Lo que esta abajo sobre escribe lo que esta arriba
+    2. Especificidad manda mas un css por id que por clase para cambiar esto se hace con !importante
+*/
