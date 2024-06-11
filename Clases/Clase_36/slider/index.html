@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!-- El defer es importante ya que disparara el javascript solo cuando la pagina esta cargada -->
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <div class="Carrousel">
+        <div class="Carrousel-container">
+            <img src="asset/licensed-image (1).jpeg" alt="imagen 0" class="Carrousel-img">
+            <img src="asset/licensed-image.jpeg" alt="imagen 1" class="Carrousel-img">
+            <img src="asset/licensed-image (1).jpeg" alt="imagen 2" class="Carrousel-img">
+        </div>
+        <!-- Botones Siguiente y Anterior -->
+        <button class="Carrousel-arrow Siguiente"></button>
+        <button class="Carrousel-arrow Anterior"></button>
+
+        <!-- Botones -->
+
+        <ul class="Carrousel-ul">
+            <li class="Carrousel-li">
+                <button class="Carrousel-btn">0</Button>
+            </li>
+            <li class="Carrousel-li">
+                <button class="Carrousel-btn">1</Button>
+            </li>
+            <li class="Carrousel-li">
+                <button class="Carrousel-btn">2</Button>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

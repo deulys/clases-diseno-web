@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider</title>
+    <link rel="stylesheet" href="css/index.css">
+    <!-- El defer es importante ya que disparara el javascript solo cuando la pagina esta cargada -->
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <div class="Slider">
+        <div class="Slider-container">
+            <img src="asset/licensed-image (1).jpeg" alt="Imagen 0" class="Slider-img isVisible">
+            <img src="asset/licensed-image.jpeg" alt="Imagen 1" class="Slider-img">
+            <img src="asset/licensed-image (1).jpeg" alt="Imagen 2" class="Slider-img">
+        </div>
+        <button class="Slider-arrow Slider-arrow--next">➡️</button>
+        <button class="Slider-arrow Slider-arrow--prev">⬅️</button>
+        <ul class="Slider-ul">
+            <li class="Slider-li">
+                <button class="Slider-btn isActive"></button>
+            </li>
+            <li class="Slider-li">
+                <button class="Slider-btn"></button>
+            </li>
+            <li class="Slider-li">
+                <button class="Slider-btn"></button>
+            </li>
+        </ul>
+    </div>
+     
+</body>
+</html>

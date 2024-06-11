@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    }
+    
+    li {
+    list-style: none;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    }
+    
+    a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    }
+    
+    p a {
+    display: inline;
+    }
+    
+    img, picture, video, iframe {
+    display: block;
+    width: 100%;
+    /* height: initial; */
+    }
+    
+    form, input, label, select, option, textarea, button {
+    font-size: inherit;
+    font-family: inherit;
+    display: block;
+    background-color: transparent;
+    }
+    
+    :root {
+    font-size: 100%;
+    }
+    
+    html {
+    scroll-behavior: smooth;
+    }
+    
+    body {
+    font-family: Helvetica, Arial;
+    }
+    /* Fin reset */
+    
+   /* Carrousel */
+
+.Carrousel{
+   width: 80%;
+   background-color: lightblue;
+   margin: 2rem auto;
+   position: relative;
+}
+.Carrousel-container{
+   width: 300%;
+   background-color: orange;
+
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   /* gap: 1rem; */
+   transition:  all .5s ease;
+   /* transform: translateX(0); */
+}
+.Carrousel-img{
+   /* width: calc(100%/3); */
+   min-height: 200px;
+   background-color: aqua;
+
+}
+.Carrousel-arrow{
+   width: 3rem;
+   height: 3rem;
+   background-color: black;
+
+   position: absolute;
+   top: calc(50% - 1.5rem);
+}
+.Siguiente{
+   right: 0;
+}
+.Anterior{
+   left: 0;
+}
+.Carrousel-ul{
+   width: 100%;
+   position: absolute;
+   bottom: 0;
+   /* background-color: brown; */
+
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: center;
+   align-items: center;
+   gap:1rem;
+}
+.Carrousel-li{}
+.Carrousel-btn{
+   width: 1rem;
+   height: 1rem;
+   background-color: black;
+   border-radius: 50%;
+}
