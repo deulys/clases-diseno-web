@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+ 
+/* h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+    font-weight: normal;
+} */
+
+/* Custom_properties es muy importante para la definicion de paletas
+y de tamaños en caso que del diseño cambie algo solo se cambia la variable */
+ :root{
+    --c-red:red;
+    --padding-2rem:4rem;
+    --c-aqua:aqua;
+    --rem-1_25:1.25rem;
+    --c-brown:brown;
+ }
+ body{
+    font-family: Helvetica, Arial;
+ }
+.Main{
+    width: 100%;
+    /* min-height: 60vh; */
+    background-color: lightcyan;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 50vh;
+}
+.Hear{
+    background-color: aquamarine;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.App{
+    background-color: blue;
+}
+.Video{
+    background-color: blueviolet;
+}
+.Say{ 
+    background-color: red;
+    grid-column: span 2;
+}
+.Map{ 
+    background-color: black;
+    grid-column: span 2;
+    
+}
+.Superb{
+    background-color: yellow;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.Running{
+    background-color: bisque;
+}
+.Wave{
+    background-color:pink;
+}
+
+@media (max-width:1200px){
+    .Main{
+        grid-template-columns:repeat(2, 1fr);
+
+    }
+}

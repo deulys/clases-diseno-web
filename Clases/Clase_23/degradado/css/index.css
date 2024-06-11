@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    }
+    
+    li {
+    list-style: none;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    }
+    
+    a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    }
+    
+    p a {
+    display: inline;
+    }
+    img, picture, video, iframe, svg {
+    display: block;
+    width: 100%;
+    height: initial;
+    }
+    svg {
+    fill: currentColor;
+    }
+    
+    :root {
+    font-size: 100%;
+    }
+    html {
+    scroll-behavior: smooth;
+    }
+    body {
+    font-family: Helvetica, Arial;
+    }
+
+ /* Degradados */
+
+.box{
+    border:1px solid black;
+    width: 200px;
+    min-height: 200px;
+    margin: 3rem auto;
+
+}
+.degradado-lineal{
+    /* Se puede utilizar background-image o solo background despende si se esta trabajand
+    con imagenes o no */
+    background-image: linear-gradient(red,green);
+    background-image: linear-gradient(red,green,blue);
+    background-image: linear-gradient(45deg,red,green,blue);
+    /* Podemos utilizar palabras claves para orientar el degradado
+    to top
+    to right
+    to bottom 
+    to left */
+    background-image: linear-gradient(to right,red,green,blue);
+
+    /* Podemos utilizar varias palabras claves */
+    
+    
+    background-image: linear-gradient(to bottom right,red,green,blue);
+
+    /* Se puede dar a cada color un porcentaje */
+
+    background-image: linear-gradient(to bottom, red 33%,green 34% 67%,blue);
+
+    background-image: linear-gradient(90deg,green 33%,#fff 34% 67%,red 68%);
+}
+
+.degradado-radial{
+    background: radial-gradient(cyan,magenta,black);
+    background: radial-gradient(circle 4rem, cyan,magenta,black);
+    background: radial-gradient(circle 100px at top left,cyan,magenta,black);
+    background: radial-gradient(circle 100px at top center,cyan 30%,magenta 50%,black 90%);
+    background: radial-gradient(ellipse 100px 50px at center center,cyan 30%,magenta 50%,black 90%);
+    background: radial-gradient(circle 100px,red 50%,white 50%);
+}
+.degradado-conico{
+    background:conic-gradient(red,green);
+    background: conic-gradient(red,green,blue);
+    background: conic-gradient(red 0% 50%,green 60%,blue 80%);
+    background: conic-gradient(red 0deg 90deg,green 120deg 240deg, blue 270deg);
+
+    background: conic-gradient(from 90deg, red 0deg 120deg,white 120deg 240deg,green 240deg );
+}
+

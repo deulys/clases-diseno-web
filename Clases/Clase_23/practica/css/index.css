@@ -1,0 +1,96 @@
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+ 
+/* h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+    font-weight: normal;
+} */
+
+/* Custom_properties es muy importante para la definicion de paletas
+y de tamaños en caso que del diseño cambie algo solo se cambia la variable */
+ :root{
+    --c-red:red;
+    --padding-2rem:4rem;
+    --c-aqua:aqua;
+    --rem-1_25:1.25rem;
+    --c-brown:brown;
+ }
+ body{
+    font-family: Helvetica, Arial;
+ }
+ .contenedor{
+    background-color: azure;
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2px;
+    grid-auto-rows: 50vh;
+ }
+ .music{
+    background-color: antiquewhite;
+    grid-row: 2 span;
+    grid-column: 2 span;
+    
+ }
+ .phone{
+   background-color: aqua;
+
+ }
+ .face{
+   background-color: bisque;
+
+ }
+ .nina{
+   background-color: blue;
+   grid-column: 2 span;
+
+ }
+ .map{
+   background-color: lightgrey;
+   grid-column: 2 span;
+ }
+ .sound{
+   background-color: pink;
+   grid-row: 2 span;
+   grid-column: 2 span;
+
+ }
+ .girl{
+   background-color: aquamarine;
+
+ }
+ .new{
+   background-color: brown;
+ }
+ @media(max-width:1200px){
+
+   .contenedor{
+      grid-template-columns: repeat(2, 1fr);
+
+   }
+   .music{
+      grid-template-rows: repeat(1, 1fr);
+   }
+   .sound{
+      grid-template-rows: repeat(1, 1fr);
+   }
+}
+ @media(max-width:900px){
+   .contenedor{
+      grid-template-columns: repeat(1, 1fr);
+      
+   }
+   .phone,.face,.nina,.map.girl{
+     grid-column: span 1;
+     grid-row: span 1;
+   }
+
+ }
