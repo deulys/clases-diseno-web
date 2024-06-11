@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/* Todo lo que contenga box apicar lo siguiente */
+[class^="box"]{
+    margin: 30px auto;
+    background-color: #777;
+}
+.box{
+    width: 300px;
+    height: 300px;
+}
+
+.box-flexible{
+    width: 50%;
+    max-width: 400px;
+    height: 20vh;
+
+}
+.box-flexible-2{
+    max-width: 960px;
+    min-width: 280px;
+    max-height: 480px;
+    min-height: 280px;
+
+}
+.box-flexible-3{
+    max-width: 960px;
+    min-width: 280px;
+    max-height: 480px;
+    min-height: 280;
+    width: 300px;
+    height: 300px;
+}
+.box-flexible-4{
+    max-width: 760px;
+    min-width: 280px;
+    max-height: 480px;
+    min-height: 280;
+    width: 50%;
+    height: 20vh;
+}
+
+/* Media Queries */
+@media(max-width:580px){
+    html{
+        background-color: pink;
+    }
+}
+@media (min-width:579px){
+    html{
+        background-color: aqua;
+    }
+}
+
+/* Mobile First */
+/* 600px o màs */
+/* Css en la parte superior de documento */
+/* La media Query afectarà a la version de escritorio */
+@media(min-width:600px){
+    html{
+        background-color: lightcoral;
+
+    }
+    h1{
+        color:red;
+    }
+}
+/* Desktop First */
+/* 1024px o menos */
+/* CSS en la parte superior del documento */
+/* La media Query afectarà a la version mòvil */
+@media(max-width:600px){
+    html{
+        background-color: lightsalmon;
+    }
+    h1{
+        color: white;
+    }
+}
