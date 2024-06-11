@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+ 
+h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+    font-weight: normal;
+}
+/* RESET */
+ :root{
+    font-size: 100%;
+ }
+ body{
+    font-family: "Josefin Sans", sans-serif;
+    font-style: normal;
+ }
+ .Header{
+    width: 100%;
+    background-color: lime;
+    padding: 2rem 5rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+.Header-h1{
+    background-color: red;
+}
+.Header-nav{
+    background-color: blue;
+}
+.Header-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.25rem;
+
+}
+.Header-li{
+    background-color: orange;
+}
+.Main{}
+.Inside{
+    width:100% ;
+    min-height: 80vh;
+    background-color: lightblue;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+.Inside-h2{
+    width: 80%;
+    background-color: aqua;
+    min-height: 30vh;
+}
+.Columnas{
+    width: 90%;
+    background-color: red;
+    margin: 6.5rem auto;
+    
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Columnas-article{
+    width: 100%;
+    background-color: azure;
+}
+.Columnas-img{
+    width: 100%;
+    min-height: 6.25rem;
+    background-color: blanchedalmond;
+    margin: 0 0 1rem;
+
+
+}
+.Columnas-h3{
+    background-color: lightgreen;
+}
+.Footer{
+    background-color: aqua;
+    padding: 0 0 2rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.Footer-copy{
+    background-color: bisque;
+}
+.Footer-a{
+    background-color: aquamarine;
+}
+.Redes{
+    background-color: blue;
+    margin:0 0 3rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    gap:1rem;
+}
+.Redes-li{
+    background-color: olive;
+}
+.Policy{
+    width: 80%;
+    max-width: 500px;
+    background-color: red;
+    margin:0 0 2rem;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}
+.Policy-li{
+    background-color: orange;
+
+}
+@media(max-width:1000px){
+    .Header-nav{
+        display: none;
+    }
+}
+@media(max-width:800px){
+    .Columnas{
+        flex-direction: column;
+    }
+}
