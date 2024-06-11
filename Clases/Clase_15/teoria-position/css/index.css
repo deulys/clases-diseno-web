@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+ 
+h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+    font-weight: normal;
+}
+/* RESET */
+ :root{
+    font-size: 100%;
+ }
+ body{
+    font-family: "Josefin Sans", sans-serif;
+    font-style: normal;
+ }
+
+ .Container{
+    width: 300px;
+    height: 300px;
+    background-color: lightgrey;
+
+    /* position static tiene un flujo natural por lo que no es necesario colocarla */
+
+    /* position: static; */
+
+    /* El position relative tiene en cuenta su propio borde */
+    /* position: relative;
+    left: 50px;
+    bottom: 50px; */
+
+    /* position absoluta el contenedor pierde su espacio y se superpone sobre otros*/
+    /* Los flex pierden su flujo */
+    /* toma como referencia su contenedor */
+    /* para que funcione bien al elemento que lo contiene hay que colocarle una posicion relativa */
+    /* position fixed se queda fijo sirve para menus, toma como referencia la misma pantalla */
+    /* position sticky es un poco especial porque la refencia varia 
+    primero su propio borde, luego su view port, por ultimo a su contenedor*/
+    /* position: relative;
+    top: 100px;
+    left: 0; */
+   /*  position: fixed; */
+   position: sticky;
+
+ }
+ .Cuadrado{
+    width: 60px;
+    height: 60px;
+    background-color: yellow;
+    position: fixed;
+    top: 0;
+ }
