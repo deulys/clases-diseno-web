@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+div.cabecera{
+    width: 100%;
+    background-color: rebeccapurple;
+    padding: 20px 50px;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+div.cabecera div.logo{
+    background-color: aqua;
+}
+div.cabecera div.menu{
+    background-color: blue;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+dix.cabecera div.menu div.item{
+    background-color: brown;
+}
+div.inside{
+    width: 100%;
+    min-height: 600px;
+    background-color: lightgray;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+div.inside div.logo{
+    width: 60%;
+    min-height: 300px;
+    background-color: bisque;
+}
+div.columnas{
+    width: 80%;
+    background-color: aquamarine;
+
+    margin: 100px auto;
+    margin:100px auto 100px;
+    margin:100px auto 100px auto;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    gap: 20px;
+}
+div.columnas div.columna{
+    width: 33.3333%;
+    width: calc(100%/3);
+    background-color: yellow;
+}
+div.columnas div.columna div.titulo{}
