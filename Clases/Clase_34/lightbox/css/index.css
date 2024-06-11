@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    }
+    
+    li {
+    list-style: none;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    }
+    
+    a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    }
+    
+    p a {
+    display: inline;
+    }
+    
+    img, picture, video, iframe {
+    display: block;
+    width: 100%;
+    /* height: initial; */
+    }
+    
+    form, input, label, select, option, textarea, button {
+    font-size: inherit;
+    font-family: inherit;
+    display: block;
+    background-color: transparent;
+    }
+    
+    :root {
+    font-size: 100%;
+    }
+    
+    html {
+    scroll-behavior: smooth;
+    }
+    
+    body {
+    font-family: Helvetica, Arial;
+    }
+    /* Fin reset */
+    
+   /* LIGTHBOX*/
+
+
+.Grid{
+   width: 80%;
+   margin: 2rem auto;
+   background-color: lightgray;
+
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap: 1rem;
+
+}
+.Grid-img{
+   background-color: orange;
+
+}
+.Lightbox{
+   /* display: none; */
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0,0,0,.5);
+   /* Coloca el elemnto que esta detras lo coloca borroso */
+   backdrop-filter: blur(20px);
+
+
+   position: fixed;
+   top: 0;
+   left: 0;
+
+
+   display: none;
+   flex-flow: column nowrap;
+   justify-content: center;
+   align-items: center;
+   gap: 1rem;
+}
+.Lightbox-btn{
+   background-color: white;
+   padding: 1rem 2rem;
+   font-size: 1.2rem;
+}
+.Lightbox-img{
+   width: 90%;
+   height: 80vh;
+   background-color: orange;
+}

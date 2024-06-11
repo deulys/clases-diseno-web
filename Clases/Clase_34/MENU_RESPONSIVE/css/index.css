@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    }
+    
+    li {
+    list-style: none;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    }
+    
+    a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    }
+    
+    p a {
+    display: inline;
+    }
+    
+    img, picture, video, iframe {
+    display: block;
+    width: 100%;
+    /* height: initial; */
+    }
+    
+    form, input, label, select, option, textarea, button {
+    font-size: inherit;
+    font-family: inherit;
+    display: block;
+    background-color: transparent;
+    }
+    
+    :root {
+    font-size: 100%;
+    }
+    
+    html {
+    scroll-behavior: smooth;
+    }
+    
+    body {
+    font-family: Helvetica, Arial;
+    }
+    /* Fin reset */
+    
+   /* MENU RESPONSIVE */
+
+  
+ .Header{
+    width: calc(100%-2rem);
+    background-color: rgb(91, 123, 163);
+    margin: 1rem;
+    border-radius: 1rem;
+
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+
+ }
+ .Header-h1{
+    /* background-color: lime; */
+    padding-left: 1rem;
+ }
+ .Header-btn{
+    /* background-color: aqua; */
+    display: none;
+    margin-right: 1rem;
+    background-color: rgb(91, 123, 163);
+
+ }
+ .Header-nav{
+   /*  background-color: pink; */
+   position: relative;
+   margin: 0 1rem;
+
+ }
+ .Header-ul{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1rem;
+
+    position: absolute;
+    width: 100%;
+    background-color: pink;
+   
+
+ }
+ .Header-li{
+    background-color: orange;
+ }
+
+ @media(max-width:700px){
+    .Header-btn{
+        display: block;
+    }
+    .Header-nav{
+        width: 100%;
+        display: none;
+    }
+    .Header-nav.isActive{
+        display: block;
+    }
+    .Header-ul{
+        flex-direction: column;
+        padding: 1rem 0 0;
+    }
+ }
