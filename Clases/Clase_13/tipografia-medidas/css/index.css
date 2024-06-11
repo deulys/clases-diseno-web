@@ -1,0 +1,124 @@
+*{
+    margin:0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+
+}
+.caja{
+    background-color: red;
+    width: 50vw;
+    min-height: 30vh;
+}
+p{
+    font-style: italic; /* Define el estilo italica */
+    font-variant: normal; /* Defini el estilo normal */
+    font-weight: bold; /* Define el grosor de la fuente */
+    font-size: 20px; /* Define el tamaño de la fuente */
+    line-height: 30px;/* Define la altura de la linea */
+    font-family: Helvetica; /* Define la fuente del texto */
+}
+.Tipografia{
+    /* width: 80%;
+    background-color: red; */
+    font-family: "roboto",sans-serif;
+    /* Este tamaño va a surtir efecto si el tipo de letra tiene disponible el peso */
+    font-weight: 300;
+    font-style: italic;
+    font-size: 100%;
+    font-variant: small-caps;
+    font-stretch: ultra-condensed;
+
+    text-align: justify;
+    text-transform: uppercase;
+    text-decoration: none;
+        /* text-decoration-color: blueviolet; */
+        /* grosor de la linea decocaration */
+        /* text-decoration-thickness: 2px; */
+    
+        text-shadow:1px 1px 3px blue ;
+    /* Si est wrap es en varias lineas y nowrap en una linea */
+    /* text-wrap: nowrap; */
+    /* text-indent: 40px; */
+    /* espacio entre letras */
+    /* letter-spacing: 4px; */
+
+    /* Espacio entre palabras */
+   /*  word-spacing: 5px; */
+    /* Separacion entre lineas */
+    /* line-height: 40px; */
+
+    /* Separar palabras con guion */
+    hyphens: auto;
+
+    /* Colores */
+    /* Sistemas hexadecimal basado en 16 valor
+    0123456789abcdef
+    rbg= rojo verde azul el maximo es f y el minimo 0
+    por lo que si se coloca #f00 el resultado es rojo vivo
+    */
+
+    color: #faebd7;
+    color:#000;
+    color:#f00;
+    /* Lo anterior seria lo mismo que escribir #ff0000 */
+    color: #23893a;
+    /* Para dar opacidad se agrega un par mas al hexadecimal */
+    color: #df2f2f50;/* Siendo el 50 la opcidad */
+    /* Tambien se puede hacer con alores de tres hexadecimal agregando un numero mas */
+    color: #2932; /* Siendo el 2 la opcidad */
+
+     /* 
+     RGB
+     Tenemos 256 valores.
+     Van desde 0 hasta 255
+     Este a diferencia del Hexadecimal como se indica anterior va de 0 a 255
+     */
+
+     color: rgb(0,0, 0);
+     color: rgb(0, 255,0);
+
+     /* Dentro del sistema RGB tambien se puede agregar un canal de opacidad o canal alfa */
+
+     /* color: rgba(red, green, blue, alpha); */
+     color: rgba(190,190, 190, 0.5);
+
+
+     font-size: 8vw;
+     font-size: clamp(2rem, 8vw, 5rem);
+
+
+    
+
+}
+h1{
+    font-size: clamp(1rem,8vw,3rem);
+    color: red;
+}
+/* .Tipografia::before{
+    content: "";
+    display: inline-block;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+
+} */
+
+
+/* 
+MEDIDAS.
+Nota Especial el vw y vh siempre se adapta al tamaño de la pantalla
+EL porcentaje es relativo al contenedor que lo contiene
+En el :root pondremos el font-size en procentaje
+En el <body> en porcentaje
+En margin en em y rem
+En padding em y rem
+El border en em y rem
+El width en porcentaje
+el min-height.En em, rem, vh.  Regla: No utilizar alturas. En todo caso, utilizar altura mìnima
+*/
+.coming-soon-regular{
+
+}
