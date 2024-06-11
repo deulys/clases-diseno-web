@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    }
+    
+    li {
+    list-style: none;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    }
+    
+    a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    }
+    
+    p a {
+    display: inline;
+    }
+    img, picture, video, iframe, svg {
+    display: block;
+    width: 100%;
+    height: initial;
+    }
+    svg {
+    fill: currentColor;
+    }
+    
+    :root {
+    font-size: 100%;
+    }
+    html {
+    scroll-behavior: smooth;
+    }
+    body {
+    font-family: Helvetica, Arial;
+    }
+/* Movimientos */
+ /* Transiciones */
+
+.box{
+   border: 2px solid black;
+   width: 200px;
+   min-height: 200px;
+   margin: 3rem auto;
+
+}
+.transitions .box{
+    background-color: red;
+    transition-property: background-color;
+    transition-duration: 500ms;
+    transition-timing-function: ease;
+    transition-delay: 500ms;
+
+    /* transtion se debe colocar la propiedad tiempo q dura haciendo la transicion el modo en que transiciona y el tiempo que dura el modo de transicion */
+    transition: background-color 1s ease-in-out 1s;
+    /* Hay que tener cuidado con el all ya que afecta el rendimiento de la pagina */
+    transition: all 1s ease-in-out 1s;
+    /* Propiedades que se pueden animar podemos revisar en el siguiente link https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties */
+    /* Con cubic se puede cambiar el modo de transicion ajustando su velocidad */
+    transition: all 1s cubic-bezier(0.39, 0.575, 0.565, 1);
+
+}
+.transitions .box:hover{
+    background-color: cyan;
+    width: 250px;
+    border-radius: 20%;
+    opacity: 50%;
+}
+
+/* .transitions .card{
+    width: 400px;
+    margin: auto;
+    /* Se puede tambien separar las transiciones de la siguiente forma */
+  /*   transition: opacity 1s ease-in-out,box-shadow 1.5s linear 2s;
+
+}
+.transitions .card:hover{
+    opacity: 0.75;
+    border-color: orchid;
+    box-shadow: 1rem 1rem 2rem 0.5rem #000;
+} */ 
+
+.transitions .card img{
+    width: 400px;
+    margin: auto;
+    transition: width 2s ease;
+}
+.transitions .card img:hover{
+    width: 450px;
+}
+
+/* Transformaciones */
+.transforms{
+    width: 400px;
+    margin: 2rem auto;
+}
+.transform-2d img{
+    transition: transform 1s ease;
+}
+.transform-2d img:hover{
+    /* El valor por defecto de transform es none */
+    transform: none;
+
+    /* Traslaciones */
+    transform: translateX(4rem);
+    transform: translateY(4rem);
+    /* Shorthand para translateX y TranslateY */
+    transform: translate(4rem,4rem);
+    /* Acepta unidades de medidas diferentes */
+    transform: translate(50%,4rem);
+    
+
+    /* Escala */
+    transform: scaleX(2);
+    transform: scaleY(2);
+    /* Shorthand para scala */
+    transform: scale(1.5,1.5);
+    /* Con valores negativos la imagen se invierte no colocar */
+    /* transform: scale(-1,-1); */
+
+
+    /* Rotacion */
+    /* Se le da un valor en grados -deg - (degree) */
+    transform: rotateX(180deg);
+    transform: rotateY(180deg);
+    /* Shorthand para rotate */
+    transform: rotate(45deg);
+    /* Las transformaciones en X e Y necesitan perperstiva 3D */
+
+    transform: rotateZ(360deg);
+
+    /* Deformacion */
+    transform: skewX(20deg);
+    transform: skewY(20deg);
+    /* Shorthand deformacion */
+    transform: skew(20deg,20deg);
+
+    /* Tranformaciones multiples - Las separamos por un espacio */
+    transform: translate(25%,25%) rotate(240deg) skew(10deg,20deg) scale(-0.5,1.5);
+
+    transform: translate(10%,10%) ;
+
+
+}
+
+/* Reviar los enlaces
+
+https://www.joshwcomeau.com/animation/css-transitions/
+https://css-tricks.com/controlling-css-animations-transitions-javascript/
+
+
+https://dev.to/ziizium/css-animations-and-transitions-51j8
+https://tympanus.net/Development/HoverEffectIdeas/index.html
+
+https://dev.to/smpnjn/css-transition-generator-5de0
+https://tympanus.net/Development/HoverEffectIdeas/index.html
+*/
+
+/* Ejempplo */
+
+.ejemplo{
+    width: 400px;
+    min-height: 350px;
+    margin: 2rem auto;
+    /* background-color: red; */
+}
+.container{
+    /* background-color: aqua; */
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.container img{
+    /* background-color: yellow; */
+    min-height: 350px;
+    
+
+}
+.container:hover img{
+    transform: scale(1.5);
+}
+.container .titular{
+    text-align: center;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    /* background-color: bisque; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    transform: scale(0.5);
+}
+.container .titular:hover{
+    opacity: 1;
+    transform: scale(1);
+}
+.boton{
+    background-color: aliceblue;
+    min-height: 50px;
+    margin: 10rem auto;
+
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    transition: all 1s linear;
+
+}
+.boton:hover{
+    background-color: red;
+    color: azure;
+    transition: all 1s ease;
+}
+.boton:hover .boton.texto{
+    transform: translateX(20px);
+}
+.boton-texto::after{
+    content: "";
+    display: block;
+    background-color: orange;
+    width: 100%;
+    min-height: 15px;
+    transform: scaleX(0);
+    transition: transform 1 s ease;
+    transform-origin: left;
+}
+.boton-texto:hover::after{
+    transform: scaleX(1);
+}
