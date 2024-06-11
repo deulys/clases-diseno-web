@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+ 
+h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+    font-weight: normal;
+}
+/* RESET */
+ :root{
+    font-size: 100%;
+ }
+ body{
+    font-family: "Josefin Sans", sans-serif;
+    font-style: normal;
+    height: 300vh;
+    background-color: #eee;
+ }
+ h2{
+    text-align: center;
+    color: #777;
+    padding: 4rem;
+    font-size: 2rem;
+ }
+ .roja{
+    background-color: red;
+
+ }
+ .amarilla{
+    background-color: yellow;
+ }
+ .azul{
+    background-color: blue;
+ }
+ .verde{
+    background-color: green;
+ }
+ .top_20{
+    top:20px
+ }
+ .alto_200{
+    min-height: 200px;
+ }
+ .alto_800{
+   min-height: 800px;
+ }
+ /* Valor por defecto */
+ .static{
+   position: static;
+ }
+ /* No rompe el flujo normal. Es la posición inicial dentro del flujo normal */
+ .relative{
+    position: relative;
+ }
+ /* En relación a su padre más cercano relativo (el elemento posicionado que lo contiene) */
+ .absolute{
+    position: absolute;
+ }
+/* En relación a la ventana del navegador */
+ .fixed{
+    position: fixed;
+    width: 4rem;
+    min-height: 15rem;
+ }
+ /* En relación a su padre más cercano relativo y la ventana del navegador. Responde al scroll de usuario posicionándose como relative o fixed cuando detecta el tope de su contenedor. */
+ .sticky{
+   position: sticky;
+ }
+ .arriba{
+   top: 0;
+ }
+ 
+ .z-index_1{
+   z-index: 1;
+ }
+ .z-index_2{
+   z-index: 2;
+ }
+/* POSITION */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/position */
+/* https://www.w3schools.com/css/css_positioning.asp */
+/*
+============================================================
+Todos los elementos tienen por defecto la posición static.
+Si posicionamos un elemento como absolute, fixed o sticky
+se activan las propiedades top, left, bottom, right y z-index.
+Los elementos que están en position static no tienen esas
+propiedades disponibles.
+======================================
+*/
+
+ .derecha_80{
+   left: 80px;
+ }
+ .arriba_izquierda{
+    top: 0;
+    left: 0;
+ }
+ .arriba_derecha{
+    top:0;
+    right: 0;
+ }
+ .abajo_derecha{
+    bottom: 0;
+    right: 0;
+ }
+ .abajo_izquierda{
+    bottom: 0;
+    left: 0;
+ }
+ .caja{
+    width: 20px;
+    height: 20px;
+ }
+ .caja_grande{
+   width: 150px;
+   height: 150px;
+ }
+ .contenedor{
+    max-width: 960px;
+    background-color: white;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-bottom: 2rem;
+ }
