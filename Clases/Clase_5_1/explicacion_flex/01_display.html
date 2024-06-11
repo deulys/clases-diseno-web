@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    .container{
+        /*
+			Tenemos dos valores para Flexbox -> flex | inline-flex
+			flex se comporta como un elemento block (ocupa el 100% del espacio disponible)
+			inline-flex se comporta como un elemento inline (ocupa el espacio que necesite)
+			*/
+            display: flex;
+            /* display: inline-flex; */
+            margin-top: 30px;
+    }
+</style>
+<body>
+    <h1>Display</h1>
+    <h2>Propiedad del elemento padre</h2>
+    <section class="container">
+        <article class="item">Elemento Flex 1</article>
+        <article class="item">Elemento Flex 2</article>
+        <article class="item">Elemento Flex 3</article>
+    </section>
+    <section class="container">
+        <article class="item">Elemento Flex 1</article>
+        <article class="item">Elemento Flex 2</article>
+        <article class="item">Elemento Flex 3</article>
+    </section>
+</body>
+</html>

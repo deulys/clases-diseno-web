@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Direction</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    .container{
+        /*
+			Tenemos dos valores para Flexbox -> flex | inline-flex
+			flex se comporta como un elemento block (ocupa el 100% del espacio disponible)
+			inline-flex se comporta como un elemento inline (ocupa el espacio que necesite)
+			*/
+            display: flex;
+            /* display: inline-flex; */
+            margin-top: 30px;
+        
+        /*
+			flex-direction
+			ACTUA EN EL EJE PRINCIPAL
+			Define cómo queremos que se comporten los hijos del elemento flex. En filas o en columnas. Solo en filas o solo en columnas.
+flex        - direction tiene cuatro valores posibles -> row | row-reverse | column | column-reverse
+			- row (por defecto)
+			- row-reverse los elementos se disponen en sentido inverso
+			- column los elementos se disponen de forma vertical, como una columna
+			- column-reverse los elementos se disponen de forma vertical, como una columna, en sentido inverso y comenzando desde la parte de abajo de su contenedor
+        */
+        flex-direction: row;
+        flex-direction: row-reverse;
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+</style>
+<body>
+    <h1>Flex Direction</h1>
+    <h2>Propiedad del elemento padre</h2>
+    <section class="container">
+        <article class="item">Elemento Flex 1</article>
+        <article class="item">Elemento Flex 2</article>
+        <article class="item">Elemento Flex 3</article>
+    </section>
+    <section class="container">
+        <article class="item">Elemento Flex 1</article>
+        <article class="item">Elemento Flex 2</article>
+        <article class="item">Elemento Flex 3</article>
+    </section>
+</body>
+</html>

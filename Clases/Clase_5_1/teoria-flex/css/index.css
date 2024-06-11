@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    }
+
+div.kata{
+    width: 80%;
+    min-height: 300px;
+    background-color: lightgray;
+    margin: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+div.kata div.item{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
+.kata1{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.kata2{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
