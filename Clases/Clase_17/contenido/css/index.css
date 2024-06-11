@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+ 
+/* h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+    font-weight: normal;
+} */
+ :root{
+    font-size: 100%;
+ }
+ body{
+    font-family: Helvetica, Arial;
+ }
+ html{
+    scroll-behavior: smooth;
+ }
+section{
+    width: 100%;
+    min-height:  80vh;
+    background-color: bisque;
+    margin: 60px;
+}
+
+.caja{
+    width: 30px;
+    min-height: 300px;
+}
