@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+   <!-- 
+        *  Formatos de video
+        *  Etiqueta video
+        *  Optimización de los vídeos 
+    -->
+
+    <!-- 
+        Formatos:
+        *  MP4 Es el más compatible
+        *  WEBM Comprime mucho pero pierde calidad
+        *  OGV. Es menos compatible. Suele utilizarse para Firefox u Ópera
+     -->
+   
+    <!-- <video src="assets/pajaro.mp4" loop autoplay controls playsinline poster="imagen.jpg" controlslist="nodownload"></video> -->
+        <!-- <video src="assets/pajaro.mp4" controls muted autoplay playsinline poster="assets/arbol.jpeg"></video> -->
+        <video class="Video" src="assets/pajaro_optimizado.webm" controls muted autoplay playsinline poster="assets/arbol.jpeg"></video>
+    <!-- 
+        Atributos
+        loop                            Vídeo en bucle
+        Autoplay                        Se reproduce automáticante solo si no tiene sonido
+        playsinline                     Vídeo para móviles
+        poster="video.jpg"              Miniatura o imagen inicial
+        src="video.mp4"                 Ruta del archivo
+        controls                        Muestra los controles
+        controlslist="nodownload"       Lista de botones que aparecen nativamente
+        muted                           El video se reproduce sin audio
+    -->
+
+    <!-- Nota la etiqueta video tiene un display inline  -->
+
+
+    <!-- Enlaces para videos https://www.pexels.com/es-es/ -->
+
+    <!-- herramienta para optimizar videos -->
+    <!-- Handbrake -->
+
+
+    <!-- Videos externos -->
+
+    <iframe 
+        width="926" 
+        height="521" 
+        src="https://www.youtube.com/embed/79AjGzAZYq8" 
+        title="Musica para trabajar activo y alegre - Música Alegre para en Tiendas, Cafés| Deep House Mix 2024 #33" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen
+        loading="lazy">
+    </iframe>
+    <iframe 
+    loading="lazy"
+        width="926" 
+        height="521" 
+        src="https://www.youtube.com/embed/79AjGzAZYq8" 
+        title="Musica para trabajar activo y alegre - Música Alegre para en Tiendas, Cafés| Deep House Mix 2024 #33" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+    </iframe>
+
+    <!-- Para maquetar videos tanto internos como externos 
+    se debe quitar los src para esta forma tener el tamaño de la caja -->
+</body>
+
+</html>

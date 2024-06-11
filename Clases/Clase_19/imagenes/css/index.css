@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+ 
+/* h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+    font-weight: normal;
+} */
+ :root{
+    font-size: 100%;
+ }
+ body{
+    font-family: Helvetica, Arial;
+ }
+ /* Reset para enlaces */
+ a{
+    color: inherit;
+    text-decoration: none;
+    display: block;
+ }
+ p a{
+    display: inline;
+ }
+ img{
+    /* display: block; */
+    width: 100%;
+    height: initial;
+ }
+ .Imagen{
+    width: 50%;
+    /* height: 600px; */
+    background-color: red;
+
+    /* El fill mantiene los valores definidos */
+    object-fit: fill;
+    /* El contain rellena los estapcio de mas de imagen en el contenedor que lo contiene */
+   /*  object-fit: contain; */
+    /* Adapta la imagen y oculta parte de la imagen para acoplarla al espacio sin quitarle los valores ni la calidad */
+    /* object-fit: cover; */
+
+ }

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- 
+        -  Formatos de imagenes
+        -  Etiquetas, img, picture...
+        -  Optimización de imágenes
+     -->
+
+      <!-- Loading lazy carga las imagenes de forma dinamica -->
+      <!-- Esto no hace falta a la imagenes que se veran al cargar -->
+      <!-- Su usa con imagenes que se veran al hacer scroll -->
+    
+      <!-- JPG, PNG, APNG, GIF, WEBP, SVG -->
+    
+      <!-- Es importante tambien dar el tamaño en html para que no se vea el efecto de montado de la imagen -->
+      <!-- Resolucion siempre 72 pixel por pulgadas -->
+      <!-- quitar los metadatos en photoshop para disminuir el peso -->
+     <!-- Para optimizar las imagenes lo ideal es hacerlo con photoshop -->
+     <!-- Sin embargo hay paginas como  https://tinypng.com/ -->
+     <!-- Existe otra como  https://cloudconvert.com/ es mas completa cambia la imagen a WEBP -->
+    <!--   <img 
+     class="Imagen"
+     src="assets/cabecera.jpg"
+     alt="Whalter white"
+     loading="lazy"> -->
+     
+
+     <!-- Segun la resolucion de la pantalla es posible cargar una imagen u otra -->
+
+     <!-- <img 
+     srcset="foto-med.jpg 480w, foto-large.jpg 800w"
+     sizes="(max-width:600px) 480px, 800px"
+     src="foto-large.jpg" 
+     alt="Texto alternativo"> -->
+
+     <!-- Con la etiqueta picture podremos configurar:
+            *  Resolución
+            *  Compatibilidad
+            *  Título
+     -->
+
+     <!-- <picture>
+        <source srcset="ruta/extra-grande.jpg" media="(min-width:1440px)">
+        <source srcset="ruta/movil.jpg" media="(max-width:480px)">
+        <img src="ruta/base.jpg" alt="Texto alternativo">
+     </picture> -->
+
+
+
+     <!-- <picture>
+        <source srcset="assets/arbol_500.jpg" media="(max-width:480px)">
+        <img src="assets/arbol.webp" alt="Arbol" loading="lazy">
+     </picture> -->
+
+
+     <!-- Formatos de archivo -->
+
+    <picture>
+        <source srcset="assets/arbol_500.webp" type="image/webp" media="max-width:480px">
+        <source srcset="assets/arbol.webp" type="image/webp" media="min-width:480px">
+        <source srcset="assets/arbol_500.jpg" type="image/jpeg" media="max-width:480px">
+        <source srcset="assets/arbol.jpg" type="image/jpeg" media="min-width:480px">
+        <img src="assets/arbol_500.jpg" alt="Arbol">
+        <!-- Para el seo la siguiente etiqueta dentro de picture es importante -->
+        <!-- Es importante colocar al figcaption display:none -->
+        <figcaption>Árbol centenario </figcaption>
+    </picture>
+
+    <!-- Otro enlace paa trabajar con imagenes 
+        https://www.photopea.com/ 
+        programa para Mac 
+        https://imageoptim.com/es.html
+        para Windows
+        https://devtoys.app/
+        -->
+</body>
+
+</html>
