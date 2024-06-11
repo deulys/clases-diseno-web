@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+ 
+/* h1,h2,h3,h4,h5,h6{
+    font-size: inherit;
+    font-weight: normal;
+} */
+
+/* Custom_properties es muy importante para la definicion de paletas
+y de tamaños en caso que del diseño cambie algo solo se cambia la variable */
+ :root{
+    --c-red:red;
+    --padding-2rem:4rem;
+    --c-aqua:aqua;
+    --rem-1_25:1.25rem;
+    --c-brown:brown;
+ }
+ body{
+    font-family: Helvetica, Arial;
+ }
+
+/* GRID */
+.container{
+    width: 80%;
+    background-color: lightgrey;
+    margin: 2rem auto;
+
+    /* Cuando agregamos display grid ya podemos usar propiedades del grip */
+
+    display: grid;
+
+    /* Con grid-template-columns podremos definir la cantidad de columnas con su tamaño */
+    /* grid-template-columns: 33.3333% 33.3333% 33.33333%; */
+    /* Tenemos una nueva unidad de medida fr */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* Existe una funcion para hacer acciones repetidas con la funcion repeat */
+    grid-template-columns: repeat(4, 1fr) 4fr ;
+    /* Existe otra funcion minmax */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    /*  Se debe tratar de usar siempre fr para los grid*/
+    grid-template-rows: 1fr;
+    /* El grid-template-rows da la altura a cada columna por lo que a coninuacion otra propiedad para dar altura a todas  */
+    grid-auto-rows: 2fr;
+    /* Si se deja el grid-template-rows le da el valor que este contenga a la primera columna */
+
+    /* gap */
+    row-gap: 1rem;
+    column-gap: 2rem;
+    /* gap: 1rem; */
+}
+.container__item{
+    background-color: orange;
+}
+.Negro{
+    background-color: black;
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.Cyan{
+    background-color: aqua;
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+/* - Utilizamos grid para la base o estructura de la web 
+   - Galería de fotos
+   - Diseño web con rejilla
+   - Diseño de apps*/
+
+    /* Para lograr el buen uso de grip de sebe tener
+     * <container> -> Le aplicamos display:grid. Configuramos las lineas
+     * Genero columnas  
+     * posicionar */
