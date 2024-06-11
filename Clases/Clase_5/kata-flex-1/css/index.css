@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+div.kata{
+ width: 150px;
+ min-height: 150px;
+ background-color: aqua;
+ margin:10px
+}
+div.kata div.item{
+    width: 50px;
+    height: 50px;
+    background-color:brown;
+}
+.kata1{
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.kata2{
+    display:flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.kata3{
+    display: flex;
+    flex-flow: row-reverse nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.kata4{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+.kata5{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: flex-start;
+    align-items:end;
+}
+.kata6{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+    align-items: end;
+}
+.kata7{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.kata8{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+.kata9{
+    display: flex;
+    flex-flow: row-reverse wrap;
+    justify-content: center;
+    align-items: center;
+}

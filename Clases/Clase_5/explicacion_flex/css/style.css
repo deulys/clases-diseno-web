@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+        background: #edd9ef;
+        font-family: 'Poppins', sans-serif;
+    }
+    .container {
+        background-color: #794f8d;
+        height: 150px;
+    }
+    .item, .flex-item {
+        background: #f3933f;
+        border: medium solid black;
+        box-sizing: border-box;
+        border-radius: 20px;
+        text-align: center;
+        color: #fff;
+    }
+    
+    .flex-container {
+        background-color: #794f8d;
+    }

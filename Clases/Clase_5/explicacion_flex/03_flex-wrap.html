@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Wrap</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<style>
+    .container{
+        /*
+			Tenemos dos valores para Flexbox -> flex | inline-flex
+			flex se comporta como un elemento block (ocupa el 100% del espacio disponible)
+			inline-flex se comporta como un elemento inline (ocupa el espacio que necesite)
+			*/
+            display: flex;
+            /* display: inline-flex; */
+            margin-top: 30px;
+        
+        /*
+			flex-direction
+			ACTUA EN EL EJE PRINCIPAL
+			Define cómo queremos que se comporten los hijos del elemento flex. En filas o en columnas. Solo en filas o solo en columnas.
+flex        - direction tiene cuatro valores posibles -> row | row-reverse | column | column-reverse
+			- row (por defecto)
+			- row-reverse los elementos se disponen en sentido inverso
+			- column los elementos se disponen de forma vertical, como una columna
+			- column-reverse los elementos se disponen de forma vertical, como una columna, en sentido inverso y comenzando desde la parte de abajo de su contenedor
+        */
+        flex-direction: row;
+        /* flex-direction: row-reverse;
+        flex-direction: column;
+        flex-direction: column-reverse; */
+
+        /*
+			flex-wrap
+			ACTUA EN EL EJE PRINCIPAL
+			flex-wrap define si los elementos se van a disponer en una sola línea o van a disponerse de forma diferente dependiendo de su ancho pudiendo crear el efecto de filas y columnas
+			Va a gestionar la forma en que se "empaquetan" los elementos.
+			flex-wrap puede tener los siguientes valores:
+            - nowrap (por defecto) Pone todos los elementos siempre o bien en una línea o en una columna, dependiendo de la propiedad flex-direction. Cuando no tiene más espacio, genera un scroll.
+			- wrap Considera el ancho de los elementos que contiene. Si no caben en una línea, se generarán varias filas, creando la ilusión de filas y columnas.
+            - wrap-reverse Envuelve o agrupa los elementos en el orden inverso. Interacciona con flex-direction en cuanto a la disposición de los elementos (reverse)
+			*/
+        flex-wrap: nowrap;
+        flex-wrap: wrap;
+        /* flex-wrap: wrap-reverse */
+        
+        /*
+			flex-flow
+			flex-flow: column wrap;
+			Es un shortcut de flex-direction y flex-wrap.
+			Primero ponemos el valor de flex-direction y después el valor de flex-wrap
+			*/
+        
+            flex-flow: row wrap;
+
+    }
+        
+    
+    .item{
+        /* width: 20%; */
+    }
+</style>
+<body>
+    <h1>Flex Wrap</h1>
+    <h2>Propiedad del elemento padre</h2>
+    <section class="container">
+        <article class="item">Elemento Flex 1</article>
+        <article class="item">Elemento Flex 2</article>
+        <article class="item">Elemento Flex 3</article>
+    </section>
+    <section class="container">
+        <article class="item">Elemento Flex 1</article>
+        <article class="item">Elemento Flex 2</article>
+        <article class="item">Elemento Flex 3</article>
+    </section>
+    <!-- section.container>article.item*19{Item $} -->
+    <section class="container">
+        <article class="item">Item 1</article>
+        <article class="item">Item 2</article>
+        <article class="item">Item 3</article>
+        <article class="item">Item 4</article>
+        <article class="item">Item 5</article>
+        <article class="item">Item 6</article>
+        <article class="item">Item 7</article>
+        <article class="item">Item 8</article>
+        <article class="item">Item 9</article>
+        <article class="item">Item 10</article>
+        <article class="item">Item 11</article>
+        <article class="item">Item 12</article>
+        <article class="item">Item 13</article>
+        <article class="item">Item 14</article>
+        <article class="item">Item 15</article>
+        <article class="item">Item 16</article>
+        <article class="item">Item 17</article>
+        <article class="item">Item 18</article>
+        <article class="item">Item 19</article>
+    </section>
+</body>
+</html>
