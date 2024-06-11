@@ -1,0 +1,76 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+}
+
+div.cabecera{
+    width: 100%;
+    min-height: 100px;
+    /* background-color : red;*/
+}
+div.cabecera div.centrado{
+    width: 70%;
+    min-height: 100px;
+    /* background-color: aqua;*/
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.cabecera div.centrado div.logo{
+    /* background-color : blue;*/
+}
+div.cabecera div.centrado div.menu{
+    /* background-color: pink;*/
+    display: flex;
+    gap: 20px;
+}
+div.cabecera div.centrado div.menu div.item{
+
+}
+
+div.inside{
+    width: 100%;
+    min-height: 600px;
+    background-color: aquamarine;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.inside div.out{
+    width: 50%;
+    min-height: 200px;
+    background-color: blue;
+}
+div.columnas{
+    width: 70%;
+    min-height: 200px;
+    /* background-color: goldenrod; */
+    margin: auto;
+
+    display: flex;
+    gap: 20px;
+}
+div.columnas div.columna{
+    width: 33.3333%;
+    min-height: 200px;
+    /* background-color: aqua; */
+    margin: 50px auto;
+
+}
+div.columnas div.columna div.imagen{
+    width: 100%;
+    min-height: 100px;
+    background-color: pink;
+    margin: 0 0 20px;
+}
+div.columnas div.columna div.titulo{
+    width:100% ;
+    min-height: 50px;
+    align-items: center;
+    /* background-color: lime; */
+}

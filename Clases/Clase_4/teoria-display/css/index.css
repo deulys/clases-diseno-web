@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+div{
+    width: 50px;
+    min-height: 50px;
+    background-color: red;
+
+    display:block;
+    /* display: none;*/
+    display: inline;
+    display: inline-block;
+}
+div.container{
+    width: 200px;
+    min-height: 200px;
+    background-color: red;
+    display: block;
+    display: flex;
+}
+div.container div.item{
+    width: 50px;
+    min-height: 50px;
+    background-color: lime;
+}
+/*div, header,nav,section,a{
+    width: 50px;
+    min-height: 50px;
+    background-color: red;
+}*/
+a{
+    width: 120px;
+    min-height: 100px;
+    background-color: red;
+
+    display: inline-block;
+}
+
+/*
+    Hay etiquetas que tienen display diferentes ejemplo de ello la etiqueta a
+    
+    Propiedades del display
+    - block (caja)
+    - inline (Texto ojo solo sale texto)
+    - flex (Flexible)
+    - grid (Rejilla)
+    - none (No se muestra)
+    - Inline-block (Texto y contenido de Div en tamaños)
+*/

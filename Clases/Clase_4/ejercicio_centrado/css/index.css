@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding: 0;
+    border:0;
+    box-sizing: border-box;
+}
+div#caja1{
+width: 90%;
+min-height: 200px;
+background-color:bisque ;
+
+margin: 50px auto;
+padding: 50px;
+border: 20px solid yellow;
+}
+
+div.cuadrado{
+    width: 70%;
+    min-height: 200px;
+    background-color: aqua;
+
+    margin: auto;
+    padding: 20px;
+    border: 20px solid red;
+}

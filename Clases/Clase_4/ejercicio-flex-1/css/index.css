@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+    border:0;
+    box-sizing: border-box;
+}
+div.container1{
+    width: 90%;
+    min-height: 200px;
+    background-color: red;
+
+    margin: auto;
+}
+div.container1 div.item{
+    width: 90%;
+    min-height: 200px;
+    background-color: aqua;
+    margin: auto;
+}
+div.container2{
+    width: 80%;
+    min-height: 200px;
+    background-color: yellow;
+    margin: auto;
+
+    display: flex;
+}
+div.container2{
+    width: 50%;
+    min-height: 150px;
+    background-color: brown;
+}
+div.container3{
+    width: 70%;
+    min-height: 200px;
+    background-color: black;
+    margin: auto;
+
+    display: flex;
+}
+div.container3 div.item{
+    width: 33.33333%;
+    min-height: 50px;
+    background-color: cadetblue;
+}
+div.container4{
+    width: 95%;
+    min-height: 200px;
+    background-color: blue;
+    margin: auto;
+
+    display: flex;
+}
+
+div.container4 div.item{
+    width: 25%;
+    min-height: 50px;
+    background-color: aquamarine;
+}
+
+div.container5{
+    width: 60%;
+    min-height: 200px;
+    background-color: blanchedalmond;
+    margin: auto;
+
+    display: flex;
+}
+
+div.container5 div.item{
+    width: 20%;
+    min-height: 50px;
+    background-color: blueviolet;
+    padding: 1px;
+    border: 1px solid red;
+}
+
+/* div.container1 div.item{
+    width: 50px;
+    min-height: 50px;
+    background-color: lime;
+} */
