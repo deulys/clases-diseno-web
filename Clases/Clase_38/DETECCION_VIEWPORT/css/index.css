@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    }
+    
+    li {
+    list-style: none;
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+    }
+    
+    a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    }
+    
+    p a {
+    display: inline;
+    }
+    
+    img, picture, video, iframe {
+    display: block;
+    width: 100%;
+    /* height: initial; */
+    }
+    
+    form, input, label, select, option, textarea, button {
+    font-size: inherit;
+    font-family: inherit;
+    display: block;
+    background-color: transparent;
+    }
+    
+    :root {
+    font-size: 100%;
+    }
+    
+    html {
+    scroll-behavior: smooth;
+    }
+    
+    body {
+    font-family: Helvetica, Arial;
+    background-color: beige;
+    font-family: 'Arial',sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    margin: 0;
+
+    }
+    /* Fin reset */
+    
+   /* DETECCION DEL VIEWPORT */
+
+.box{
+   background-color: steelblue;
+   color: white;
+
+   width: 400px;
+   height: 200px;
+   margin: 10px;
+
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: center;
+   align-items: center;
+   border-radius: 10px;
+
+   box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+   
+   transform: translateX(400%);/* Se mueve hacia la derecha */
+   transition: transform 0.5s ease-in;
+}
+/* Selecciona lo pares*/
+.box:nth-of-type(even){
+   transform: translateX(-400%);/* Se mueve hacia la izquierda */
+}
+.box.show{
+   /* Posiciòn el elemnto entra en el viewport vuelve a su posicion inicial */
+   transform: translateX(0);
+}
+h2{
+   font-size: 2.8125rem
+}
+footer{
+   height: 20vh;
+   background-color: steelblue;
+   margin-top: 10vh;
+}
+
